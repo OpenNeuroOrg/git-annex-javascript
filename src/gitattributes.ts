@@ -1,9 +1,5 @@
 import ignore from "ignore"
-/**
- * Git annex supports many backends, we support a limited subset used by OpenNeuro (for now)
- * https://git-annex.branchable.com/backends/
- */
-export type GitAnnexBackend = "GIT" | "SHA256" | "SHA256E" | "MD5" | "MD5E"
+import { GitAnnexBackend } from "./types.ts"
 
 /**
  * Annex attributes for one path
@@ -15,7 +11,7 @@ export interface GitAnnexAttributeOptions {
 }
 
 /**
- * Minimal parsing of .gitattributes for uploader usage
+ * Minimal parsing of .gitattributes
  */
 export type GitAnnexAttributes = Record<string, GitAnnexAttributeOptions>
 
