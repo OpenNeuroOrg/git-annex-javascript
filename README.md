@@ -1,0 +1,1 @@
+Utilities for working with git-annex repositories in JavaScript or TypeScript applications.
